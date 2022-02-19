@@ -4,9 +4,74 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/style.css">
+        <!-- <link rel="stylesheet" ,href="styles/style.css"> -->
         <script src="scripts/script.js"></script> 
         <title>Dementor Guinea Pigs</title>
+        <!-- I am temporarily using in page css styling in order to test without affecting the rest of the site. -->
+        <style>
+            body {
+                font-family: arial;
+                background-color: lightblue;
+                border-style: none;
+                padding: 10px;
+            }
+            
+            /*.navbar {
+                display: flex;
+                justify-content: space-between;
+                
+            }*/
+
+            .navbar a {
+                color: white;
+                font-weight: 300;
+                letter-spacing: 2px;
+                text-decoration: none;
+                background: #333;
+                padding: 20px 5px;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+            }
+
+            .navbar a:hover {
+                background: #111;
+            }
+
+            .navbar .active {
+            background-color: #04AA6D;
+            }
+
+            .navbar ul {
+                border: 1px solid #333;;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+
+            .navbar li {
+                flex: 3;    
+            }
+
+            /*.nav-links {
+                display: flex;
+                list-style-type: none;
+                gap: 1em;
+            }
+
+            .nav-links ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                /* overflow: hidden;
+                position: fixed;
+                width: 100%;
+                top: 0; 
+                background-color: #333;
+                display: flex;
+            }*/
+        </style>
     </head>
 <body>
     <nav class="navbar">
