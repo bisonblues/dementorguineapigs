@@ -20,10 +20,45 @@
                 display: flex;
                 outline: 2px solid darkblue;
                 /*background-color: darkblue;*/
+                
             }
 
             div {
                 outline: 2px solid darkblue;
+                align-self: center;
+                
+            }
+
+            ul, li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            ul {
+                background: #CCF;
+                width: 25em;
+                
+                display: flex;
+                flex-direction: row;
+            }
+
+            ul.second {
+                align-items: center;
+            }
+
+            ul > li {
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 5em;
+  
+                text-align: center;
+  
+            /*outline: 1px dotted #444;*/
+            }
+
+            ul > li:nth-child(2) {
+                background: #CFC;
             }
         </style>
     </head>
@@ -36,6 +71,7 @@
             <br>extra
             <br>text
         </div>
+        
         <!-- <ul class="nav-links">
             <li class="nav-item"><a href="index.html">Home</a></li>
             <li class="nav-item"><a class="active" href="#">Insults</a></li>
@@ -44,5 +80,12 @@
         </ul> -->
     </nav>
     <h1>CSS Testing Page</h1>
+    <ul class="second">
+        <li>Sample</li>
+        <li><span>span</span></li>
+        <li><span>multiple</span> <span>span</span></li>
+        <li>text <span>span</span></li>
+        <li>multi<br>line</li>
+      </ul>
 </body>
 </html>
