@@ -28,6 +28,23 @@
                 align-self: center;
                 
             }
+/* Removes the styling from the hyperlinks */
+            a {
+                color: white;
+                font-weight: 300;
+                letter-spacing: 2px;
+                text-decoration: none;
+                background: #333;
+                display: inline-block;
+            }
+
+            a:hover {
+                background: #111;
+            }
+
+            .active {
+            background-color: #04AA6D;
+            }
 
             ul, li {
                 list-style: none;
@@ -36,12 +53,13 @@
             }
 
             ul {
-                background: #CCF;
+                background: #333;
                 width: 25em;
                 
                 display: flex;
                 flex-direction: row;
-                /*width: 100%;*/
+                width: 100%;
+                
             }
 
             ul.second {
@@ -54,13 +72,14 @@
                 flex-basis: 5em;
   
                 text-align: center;
+                
   
             /*outline: 1px dotted #444;*/
             }
 
-            ul > li:nth-child(2) {
+            /* ul > li:nth-child(2) {
                 background: #CFC;
-            }
+            } */
         </style>
     </head>
 <body>
@@ -81,12 +100,30 @@
         </ul> -->
     </nav>
     <h1>CSS Testing Page</h1>
+
+    
     <ul class="second">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="#">Insults</a></li>
+        <li><a href="worlddomination.html">World Domination</a></li>
+        <li><a href="cultification.html">Cultification</a></li>
+    </ul>
+    
+    <br>
+    <br>
+
+    <!--  <ul class="second">
         <li>Sample</li>
+        <li>span</li>
+        <li>multiple span</li>
+        <li>text span</li>
+        <li>multi line</li>
+      </ul>
+
+      <li>Sample</li>
         <li><span>span</span></li>
         <li><span>multiple</span> <span>span</span></li>
         <li>text <span>span</span></li>
-        <li>multi<br>line</li>
-      </ul>
+        <li>multi<br>line</li> -->
 </body>
 </html>
